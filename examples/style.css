@@ -1,0 +1,16 @@
+#main {
+    space: 1s;
+    height: auto;
+}
+
+.p {
+    bottom: 10px;
+    left: 1s;
+    right: 1s;
+}
+
+prompt {
+    layout-type: row;
+    width: auto;
+    col-between: 20px;
+}

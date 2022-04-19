@@ -1,0 +1,13 @@
+<view name="main">
+    <arg name="count-ok" type="int" />
+    <arg name="count-cancel" type="int" />
+    <arg name="on-ok" type="callback" />
+    <arg name="on-cancel" type="callback" />
+    <arg name="back-to-rust" type="view" />
+    <body>
+        <label class="p">Hello world!</label>
+        <prompt class="p" ok-label="Ok" cancel-label="Cancel" ok-callback="{{on-ok}}" cancel-callback="{{on-cancel}}" />
+        <llabel class="p" key="message" ok-count="{{count-ok}}" cancel-count="{{count-cancel}}" other-count="0" />
+        {{ back-to-rust }}
+    </body>
+</view>

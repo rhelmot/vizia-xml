@@ -1,0 +1,14 @@
+<view name="prompt">
+    <arg name="ok-label" type="string" loc="attr"/>
+    <arg name="cancel-label" type="string" loc="attr"/>
+    <arg name="ok-callback" type="callback" loc="attr"/>
+    <arg name="cancel-callback" type="callback" loc="attr"/>
+    <body>
+        <button action="{{ok-callback}}">
+            <label>{{ok-label}}</label>
+        </button>
+        <button action="{{cancel-callback}}">
+            <label>{{cancel-label}}</label>
+        </button>
+    </body>
+</view>
